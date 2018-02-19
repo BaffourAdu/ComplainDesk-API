@@ -31,6 +31,7 @@ app.post('/api/v1/departments', function(req, res) {
 
 //Route to our department EndPoint (accessed at PUT http://localhost:4000/api/v1/departments/:id)
 app.put('/api/v1/departments/:id', function(req, res) {
+  
     let departmentID = req.params.id;
 
     res.json({ message: 'hooray! Department with id => ' + departmentID + ' Updated!'});   
@@ -38,7 +39,10 @@ app.put('/api/v1/departments/:id', function(req, res) {
 
 //Route to our department EndPoint (accessed at DELETE http://localhost:4000/api/v1/departments/:id)
 app.delete('/api/v1/departments/:id', function(req, res) {
-    res.json({ message: 'hooray! welcome to our Post Department Route!' });   
+
+    let departmentID = req.params.id;
+
+    res.json({ message: 'hooray! Department with id => ' + departmentID + ' Deleted!' });   
 });
 
 
