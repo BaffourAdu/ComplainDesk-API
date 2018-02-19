@@ -1,0 +1,10 @@
+{
+    "name": "complain-desk",
+    "author": "spacelab",
+    "main": "server.js",
+    "dependencies": {
+        "express": "*",
+        "mongoose": "*",
+        "body-parser": "*"
+    }
+}
